@@ -27,4 +27,5 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
+        cp config/.env.example config/.env
         python manage.py test
